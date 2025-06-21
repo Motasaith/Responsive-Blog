@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding CSS Grid - MyBlog</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">MyBlog</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="dark-toggle" id="darkToggle"><i class="fas fa-moon"></i></button>
+        <div class="menu-icon" id="menuIcon"><i class="fas fa-bars"></i></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <article class="blog-post-full">
+      <img src="OIP.jpeg" alt="Blog image" />
+      <h2>Understanding CSS Grid</h2>
+      <p><strong>Posted on:</strong> June 21, 2025 | <strong>Author:</strong> Abdul Rauf Azhar</p>
+      <p>
+        CSS Grid Layout is a powerful 2-dimensional layout system that gives developers full control over rows and columns in responsive designs. Unlike Flexbox, which handles layout in one dimension at a time, CSS Grid allows you to place items into a structured grid — just like a spreadsheet.
+      </p>
+      <p>
+        You can define grid containers, create responsive columns with `fr` units, align items using `justify-content` and `align-content`, and even create complex layouts with minimal code.
+      </p>
+      <h3>Why Use Grid?</h3>
+      <ul>
+        <li>Build multi-column layouts easily</li>
+        <li>No need for float or inline-block hacks</li>
+        <li>Works well with media queries and Flexbox</li>
+      </ul>
+      <p>
+        Try combining Grid for layout structure and Flexbox for internal element alignment to create modern and efficient designs.
+      </p>
+    </article>
+
+    <aside class="sidebar">
+      <img src="Profile picture (5).png" class="author-pic" alt="Author">
+      <h3>Author</h3>
+      <p>I’m Abdul Rauf, a developer who loves clean UI and writing about tech that matters.</p>
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 MyBlog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+</body>
+</html>

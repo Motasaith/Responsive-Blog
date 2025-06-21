@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Blog Site</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   <header>
+    <div class="container nav-container">
+      <h1 class="logo">AbdulBlog</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="dark-toggle" id="darkToggle"><i class="fas fa-moon"></i></button>
+        <div class="menu-icon" id="menuIcon"><i class="fas fa-bars"></i></div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Abdul Blog</h2>
+      <p>Insights, stories, and tips for developers and thinkers.</p>
+    </div>
+  </section>
+
+  <main class="container main-grid">
+    <section class="blog-posts">
+      <article class="post">
+        <img src="OIP.jpeg" alt="Blog image">
+        <h3>Understanding CSS Grid</h3>
+        <p>Learn how CSS Grid can simplify your layout process and make your site responsive.</p>
+        <a href="blog-post.html">Read More</a>
+      </article>
+
+      <article class="post">
+        <img src="R.png" alt="Blog image">
+        <h3>JavaScript Basics for Beginners</h3>
+        <p>Start your JavaScript journey with these basic but powerful concepts.</p>
+        <a href="blog-post.html">Read More</a>
+      </article>
+
+      <article class="post">
+        <img src="flex3.png" alt="Blog image">
+        <h3>Why Flexbox Still Matters</h3>
+        <p>Flexbox remains a crucial tool in modern responsive design. Here's why.</p>
+        <a href="blog-post.html">Read More</a>
+      </article>
+    </section>
+
+    <aside class="sidebar">
+      <img src="Profile picture (5).png" alt="Author" class="author-pic">
+      <h3>About Me</h3>
+      <p>I’m a passionate developer sharing insights on tech, code, and design.</p>
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:abdulrauf.azhar@proton.me">abdulrauf.azhar@proton.me</a></p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 AbdulBlog. All rights reserved.</p>
+    </div>
+  </footer>
+  <script
+      src="https://kit.fontawesome.com/af04cde8cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+</body>
+</html>
